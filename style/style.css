@@ -1,0 +1,128 @@
+:root {
+    --space-xxs: 4px;
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space: 24px; 
+    --space-md: 32px;
+    --space-lg: 48px;
+    --space-xlg: 64px;
+  
+    --screen-sm: 768px;
+  
+    --gray: #555;
+    --gray-dark: #333;
+    --gray-darker: #111;
+    --gray-light: #f1f1f1;
+    --gray-lighter: #fafafa;
+    --blue: #187888;
+    --yellow: #e6af05;
+    --white: #fff;
+    --black: #000;
+  
+    --brand-primary: var(--blue);
+    --background: var(--white);
+    --text-color: var(--gray-darker);
+  }
+  
+
+html,body{
+	height: 100%;
+}
+body{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+	background: #dde1e7;
+	text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+
+th, td {
+    background-color: #c5eded;
+    padding: 5px;
+}
+
+
+.main-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio{
+    margin: 0 0 50px 0;
+}
+/*
+helpers css
+margin top e bo- mt 
+
+*/
+.mt-1 {
+    margin-top: 8px;
+}
+.mt-2 {
+    margin-top: 16px;
+}
+
+.mb-1 {
+    margin-top: 8px;
+}
+.mb-2 {
+    margin-top: 16px;
+}
+
+
+
+.content{
+	width: 330px;
+    background: #dde1e7;
+    border-radius: 15px;
+    padding: 40px 30px;
+    box-shadow: -3px -3px 7px #ffffff73,
+                2px 2px 5px rgba(94,104,121,0.288);
+}
+
+.card{
+    background: #dde1e7;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: -3px -3px 7px #ffffff73,
+                2px 2px 5px rgba(94,104,121,0.288);
+}
+
+a {
+    color: #0d1288;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-radius: 1px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  
+  a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+
+
+  
