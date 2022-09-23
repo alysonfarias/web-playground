@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="../style/starwarsapi.css" />
+    <!-- import the webpage's javascript file -->
+    <script src="/js/starwarsapi.js" defer></script>
+</head>
+
+<body>
+    <!-- this is the start of content -->
+    <header>
+        <img class="fade"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Star_wars_1977_us.svg/286px-Star_wars_1977_us.svg.png"
+            alt="Star Wars logo">
+    </header>
+    <h1 class="perspective">Seus olhos podem te enganar, não confie neles.</h1>
+    <main class="d-flex">
+        <div class="findById card">
+            <p> Digite um ID: </p>
+            <input id="inputID" type="number" />
+            <button id="btPesquisar">Pesquisar</button>
+        </div>
+
+        <section class="card">
+            <h3 id="nome"></h3>
+            <p id="altura"></p>
+            <p id="peso"></p>
+            <p id="nomePlanetaNatal"></p>
+            <p id="filmesParticipou"></p>
+            <ul id="filmesParticipadosList"></ul>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
